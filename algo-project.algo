@@ -1,0 +1,25 @@
+ALGORITHM algorithm_project
+VAR
+    sentence: STRING ; :="HELLO WORLD."
+    i=INTEGER ; :=0
+    countCharacter=INTEGER ; :=0
+    countWord=INTEGER ; :=0
+    countVowel=INTEGER ; :=0
+BEGIN
+
+WHILE (sentence[i]<>".") DO
+        IF (sentence[i]=" ") THEN
+            countWord=countWord+1;
+        IF (sentence[i]="a") or (sentence[i]="e") or (sentence[i]="i") or (sentence[i]="o") or (sentence[i]="u")  THEN
+            countVowel=countVowel+1;
+        END_IF
+        countCharacter=countCharacter+1;
+        i=i+1
+
+
+END_WHILE
+    countCharacter=countCharacter+1;
+
+
+
+
